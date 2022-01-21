@@ -1,0 +1,28 @@
+{
+  "name": "nodeci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js | pino-pretty",
+    "lint": "eslint --fix src test index.js",
+    "test": "mocha test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mocha": "^9.1.4",
+    "pino": "^7.6.4",
+    "supertest": "^6.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "pino-pretty": "^7.5.0"
+  }
+}
