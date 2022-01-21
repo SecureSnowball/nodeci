@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js | pino-pretty",
-    "lint": "eslint --fix src test index.js",
-    "test": "mocha test"
+    "format": "eslint --fix src test index.js",
+    "test": "mocha test",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "eslint": "^8.7.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
+    "husky": "^7.0.4",
     "pino-pretty": "^7.5.0"
   }
 }
